@@ -1,0 +1,28 @@
+{
+    "type": "object",
+    "properties": {
+        "AccountSid": {
+            "required": true,
+            "type": "string"
+        },
+        "QueueSid": {
+            "required": true,
+            "type": "string"
+        },
+        "mediaTypeExtension": {
+            "required": true,
+            "type": "string",
+            "enum": [
+                ".xml",
+                ".json",
+                ".csv",
+                ".html"
+            ],
+            "default": ".xml"
+        },
+        "CallSid": {
+            "required": true,
+            "type": "string"
+        }
+    }
+}

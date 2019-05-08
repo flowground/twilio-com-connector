@@ -1,0 +1,28 @@
+{
+    "type": "object",
+    "properties": {
+        "AccountSid": {
+            "required": true,
+            "type": "string"
+        },
+        "IpAccessControlListSid": {
+            "required": true,
+            "type": "string"
+        },
+        "mediaTypeExtension": {
+            "required": true,
+            "type": "string",
+            "enum": [
+                ".xml",
+                ".json",
+                ".csv",
+                ".html"
+            ],
+            "default": ".xml"
+        },
+        "IpAddressSid": {
+            "required": true,
+            "type": "string"
+        }
+    }
+}

@@ -1,0 +1,22 @@
+{
+    "type": "object",
+    "properties": {
+        "mediaTypeExtension": {
+            "required": true,
+            "type": "string",
+            "enum": [
+                ".xml",
+                ".json",
+                ".csv",
+                ".html"
+            ],
+            "default": ".xml"
+        },
+        "AccountSid": {
+            "required": true,
+            "type": "string",
+            "minLength": 34,
+            "maxLength": 34
+        }
+    }
+}

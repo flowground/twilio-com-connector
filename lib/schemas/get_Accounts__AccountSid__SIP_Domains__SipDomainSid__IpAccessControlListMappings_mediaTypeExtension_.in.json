@@ -1,0 +1,17 @@
+{
+    "type": "object",
+    "properties": {
+        "AccountSid": {
+            "required": true,
+            "type": "string"
+        },
+        "SipDomainSid": {
+            "required": true,
+            "type": "string"
+        },
+        "mediaTypeExtension": {
+            "required": true,
+            "type": "string"
+        }
+    }
+}

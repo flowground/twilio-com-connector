@@ -1,0 +1,25 @@
+{
+    "type": "object",
+    "properties": {
+        "AccountSid": {
+            "required": true,
+            "type": "string"
+        },
+        "mediaTypeExtension": {
+            "required": true,
+            "type": "string",
+            "enum": [
+                ".json",
+                ".csv",
+                ".html",
+                ".txt",
+                ".xml"
+            ],
+            "default": ".xml"
+        },
+        "TranscriptionSid": {
+            "required": true,
+            "type": "string"
+        }
+    }
+}

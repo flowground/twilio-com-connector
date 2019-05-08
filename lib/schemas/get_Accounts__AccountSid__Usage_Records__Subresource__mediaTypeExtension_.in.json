@@ -1,0 +1,34 @@
+{
+    "type": "object",
+    "properties": {
+        "AccountSid": {
+            "required": true,
+            "type": "string"
+        },
+        "mediaTypeExtension": {
+            "required": true,
+            "type": "string",
+            "enum": [
+                ".xml",
+                ".json",
+                ".csv",
+                ".html"
+            ],
+            "default": ".xml"
+        },
+        "Subresource": {
+            "required": true,
+            "type": "string",
+            "enum": [
+                "Daily",
+                "Monthly",
+                "Yearly",
+                "AllTime",
+                "Today",
+                "Yesterday",
+                "ThisMonth",
+                "LastMonth"
+            ]
+        }
+    }
+}

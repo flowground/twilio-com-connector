@@ -1,0 +1,23 @@
+{
+    "type": "object",
+    "properties": {
+        "AccountSid": {
+            "required": true,
+            "type": "string"
+        },
+        "mediaTypeExtension": {
+            "required": true,
+            "type": "string",
+            "enum": [
+                ".xml",
+                ".wav",
+                ".mp3"
+            ],
+            "default": ".wav"
+        },
+        "RecordingSid": {
+            "required": true,
+            "type": "string"
+        }
+    }
+}
